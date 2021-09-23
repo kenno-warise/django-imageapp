@@ -8,6 +8,7 @@
       <p class="text-center">作成日：{{ img.created_at }}</p>
       <p class="text-center">高さ：{{ img.url_height }}</p>
       <p class="text-center">幅：{{ img.url_width }}</p>
+      <a href="{{ img.image.url }}">ダウンロード</a>
       </div>
       {% endfor %}
       </div>
