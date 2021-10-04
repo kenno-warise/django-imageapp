@@ -3,13 +3,15 @@
 {% block content %}
       <div class="row">
       {% for img in images %}
-      <div class="col-6 col-md-2">
-      <img class="img-thumbnail" src="{{ img.image.url }}" alt="img">
+      <!--div class="col-6 col-md-2"-->
+      <img src="{{ img.image.url }}" alt="img">
+      <a href="{{ img.image.url }}">ダウンロード1</a>
+      <img src="{{ img.image_medium.url }}" alt="img">
+      <a href="{{ img.image_medium.url }}">ダウンロード2</a>
+      <img src="{{ img.image_small.url }}" alt="img">
+      <a href="{{ img.image_small.url }}">ダウンロード3</a>
       <p class="text-center">作成日：{{ img.created_at }}</p>
-      <p class="text-center">高さ：{{ img.url_height }}</p>
-      <p class="text-center">幅：{{ img.url_width }}</p>
-      <a href="{{ img.image.url }}">ダウンロード</a>
-      </div>
+      <!--/div-->
       {% endfor %}
       </div>
     </div>
