@@ -1,6 +1,7 @@
 {% extends 'images/base.html' %}
 
 {% block content %}
+{% if images %}
       <div class="row">
       {% for img in images %}
       <!--div class="col-6 col-md-2"-->
@@ -14,5 +15,7 @@
       <!--/div-->
       {% endfor %}
       </div>
-    </div>
+{% else %}
+<h1>画像はありません</h1>
+{% endif %}
 {% endblock %}
