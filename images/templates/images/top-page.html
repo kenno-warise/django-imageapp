@@ -6,11 +6,11 @@
       {% for img in images %}
       <!--div class="col-6 col-md-2"-->
       <img src="{{ img.image.url }}" alt="img">
-      <a href="{{ img.image.url }}">ダウンロード1</a>
+      <a href="{{ img.image.url }}">デフォルト画像</a>
       <img src="{{ img.image_medium.url }}" alt="img">
-      <a href="{{ img.image_medium.url }}">ダウンロード2</a>
+      <a href="{{ img.image_medium.url }}">中設定の画像</a>
       <img src="{{ img.image_small.url }}" alt="img">
-      <a href="{{ img.image_small.url }}">ダウンロード3</a>
+      <a href="{{ img.image_small.url }}">小設定の画像</a>
       <p class="text-center">作成日：{{ img.created_at }}</p>
       <!--/div-->
       {% endfor %}

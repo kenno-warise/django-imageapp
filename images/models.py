@@ -13,9 +13,9 @@ class Image(models.Model):
     )
     image_small = ImageSpecField(
             source='image',
-            processors=[Thumbnail(200, 100)],
+            processors=[Thumbnail(600, 500)],
             format='JPEG',
-            options={'quality': 60}
+            options={'quality': 100}
     )
     created_at = models.DateField(auto_now_add=True)
 
